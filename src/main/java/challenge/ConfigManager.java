@@ -23,11 +23,12 @@ public class ConfigManager {
         Set<String> ignoredColors = new HashSet<>();
         String ignoreColorsInput = properties.getProperty("ignoreColors", "");
         if (!ignoreColorsInput.isEmpty()) {
-            String[] colors = ignoreColorsInput.split(",");
+            String[] colors = ignoreColorsInput.split(" ");
             for (String color : colors) {
                 ignoredColors.add(color.trim());
             }
         }
+        System.err.println(ignoredColors);
         return ignoredColors;
     }
 
