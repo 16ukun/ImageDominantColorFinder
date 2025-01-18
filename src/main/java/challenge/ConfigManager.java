@@ -28,7 +28,7 @@ public class ConfigManager {
                 ignoredColors.add(color.trim());
             }
         }
-        System.err.println(ignoredColors);
+        System.out.println("Ingnoring colors: " + ignoredColors);
         return ignoredColors;
     }
 

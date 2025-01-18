@@ -51,10 +51,12 @@ There is a default configuration in /src/main/resources/config.properties
 
 ```
 properties
-Copy code
-imagePath=/path/to/your/image.jpg  # Path to the image file
-ignoredColors=0,0,0      # Colors to ignore e.g. black
-numberOfColors=3         # Number of top colors to display
+# Path to the image file
+imagePath=/path/to/your/image.jpg
+# Colors to ignore e.g. black
+ignoredColors=0,0,0
+# Number of top colors to display
+numberOfColors=3
 ```
 
 ### 4. Run the Application
@@ -81,3 +83,9 @@ Color: 100,90,40, Count: 1225
 Unable to load the image: Ensure the image path specified in config.properties is correct and the file exists.
 
 Invalid config.properties format: Ensure the file is correctly formatted with valid key-value pairs (e.g., imagePath, ignoredColors, numberOfColors)
+
+### References:
+Extracting Pixel from an image:
+https://www.tutorialspoint.com/how-to-get-pixels-rgb-values-of-an-image-using-java-opencv-library#:~:text=Retrieving%20the%20pixel%20contents%20(ARGB%20values)%20of%20an%20image%20%E2%88%92&text=Get%20the%20pixel%20value%20at,and%20getBlue()%20methods%20respectively.
+
+https://www.rapidtables.com/convert/color/rgb-to-hex.html?r=140&g=210&b=70
