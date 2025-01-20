@@ -53,7 +53,7 @@ There is a default configuration in /src/main/resources/config.properties
 properties
 # Path to the image file
 imagePath=/path/to/your/image.jpg
-# Colors to ignore e.g. black
+# Colors to ignore (space seperated) e.g. black
 ignoredColors=0,0,0
 # Number of top colors to display
 numberOfColors=3
@@ -88,4 +88,8 @@ Invalid config.properties format: Ensure the file is correctly formatted with va
 Extracting Pixel from an image:
 https://www.tutorialspoint.com/how-to-get-pixels-rgb-values-of-an-image-using-java-opencv-library#:~:text=Retrieving%20the%20pixel%20contents%20(ARGB%20values)%20of%20an%20image%20%E2%88%92&text=Get%20the%20pixel%20value%20at,and%20getBlue()%20methods%20respectively.
 
+Color spaces:
+https://blog.frame.io/2020/02/03/color-spaces-101/
+
+Color cenverter:
 https://www.rapidtables.com/convert/color/rgb-to-hex.html?r=140&g=210&b=70
